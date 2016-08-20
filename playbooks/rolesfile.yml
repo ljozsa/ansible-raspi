@@ -1,0 +1,4 @@
+---
+- src: dochang.pip
+
+- src: https://github.com/ljozsa/raspicam-role.git
