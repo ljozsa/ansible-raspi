@@ -1,7 +1,7 @@
 ---
 - hosts: raspi
   vars:
-    raspicam_ssh_login: CHANGE
+    raspicam_openshift_ssh_login: CHANGE
     raspicam_ftp_filename: CHANGE
   roles:
       - dochang.pip
