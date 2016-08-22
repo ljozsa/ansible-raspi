@@ -2,3 +2,7 @@
 - src: dochang.pip
 
 - src: https://github.com/ljozsa/raspicam-role.git
+  name: raspicam
+
+- src: https://github.com/ljozsa/openshift-ftp-upload-role.git
+  name: openshift-ftp-upload
