@@ -1,0 +1,7 @@
+---
+raspicam_offsite_image_copy_server_name: lkcm.eu
+raspicam_offsite_image_copy_ssh_login: root
+raspicam_offsite_image_copy_ftp_ip: 192.168.1.1
+raspicam_offsite_image_copy_enable_ftp: True
+raspicam_name: none
+sfpg_local: False
