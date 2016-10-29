@@ -1,5 +1,5 @@
 [raspi]
-192.168.71.247
+192.168.71.117 raspicam_offsite_image_copy_enable_ftp=False
 
 [webservers]
-192.168.71.247 sfpg_use_subdomain=False sfpg_raspi_local=True
+192.168.71.247 sfpg_use_subdomain=False

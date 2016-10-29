@@ -19,4 +19,5 @@
   roles:
       - dochang.pip
       - raspicam
+      - raspicam-offsite-image-copy
   remote_user: root
