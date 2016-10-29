@@ -1,9 +1,22 @@
 ---
+- hosts: all
+  vars_prompt:
+      - name: "pi_pass"
+        prompt: "Enter pass"
+        private: yes
+  roles:
+      - raspi_initial_setup
+  remote_user: pi
+  become: true
+  gather_facts: false
+
 - hosts: webservers
   roles:
       - sfpg
+  remote_user: root
 
 - hosts: raspi
   roles:
       - dochang.pip
       - raspicam
+  remote_user: root
