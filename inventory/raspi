@@ -1,2 +1,5 @@
 [raspi]
 192.168.71.247
+
+[webservers]
+192.168.71.247 sfpg_use_subdomain=False sfpg_raspi_local=True
