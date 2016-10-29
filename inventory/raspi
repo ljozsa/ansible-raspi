@@ -1,5 +1,5 @@
 [raspi]
-192.168.71.247
+cam-hangar2
 
 [webservers]
-192.168.71.247 sfpg_use_subdomain=False
+lkcm.eu sfpg_use_subdomain=True
