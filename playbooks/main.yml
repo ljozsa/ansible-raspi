@@ -13,6 +13,7 @@
 - hosts: raspi
   roles:
       - dochang.pip
+      - distribute-ssh-keys
       - raspicam
       - raspicam-offsite-image-copy
   remote_user: root

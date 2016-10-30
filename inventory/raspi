@@ -1,5 +1,5 @@
 [raspi]
-cam-hangar2
+cam-hangar2 raspicam_offsite_image_copy_enable_ftp=False
 
 [webservers]
 lkcm.eu sfpg_use_subdomain=True
