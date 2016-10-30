@@ -1,13 +1,21 @@
 ---
 - hosts: raspi
   vars:
-    raspicam_offsite_image_copy_ssh_login: root
-    raspicam_offsite_image_copy_server_name: lkcm.eu
-    raspicam_offsite_image_copy_enable_ftp: True
-    raspicam_offsite_image_copy_ftp_ip: 192.168.1.1
-    raspicam_name: test
+    - raspi_initial_setup_first_time_run: False
   roles:
-      - dochang.pip
-      - raspicam
-      - sfpg
-      - raspicam-offsite-image-copy
+    - raspi_initial_setup
+  remote_user: root
+  gather_facts: no
+
+- hosts: webservers
+  roles:
+    - sfpg
+  remote_user: root
+
+- hosts: raspi
+  roles:
+    - dochang.pip
+    - distribute-ssh-keys
+    - raspicam
+    - raspicam-offsite-image-copy
+  remote_user: root
