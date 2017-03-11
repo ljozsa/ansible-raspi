@@ -1,0 +1,19 @@
+---
+- hosts: ogn
+  user: pi
+  become: yes
+  roles:
+    - mobile-net-setup-role
+    - ogn-node
+
+- hosts: lkcm-eu
+  remote_user: root
+  roles:
+    - get-hostname
+    - ansible-role-openvpn
+
+- hosts: ogn
+  user: pi
+  become: yes
+  roles:
+    - copy-client-certs
