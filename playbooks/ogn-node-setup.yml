@@ -1,19 +1,20 @@
 ---
 - hosts: ogn
-  user: pi
+  user: root
   become: yes
   roles:
+    - enable-root-pubkey-login-role
     - mobile-net-setup-role
     - ogn-node
 
 - hosts: lkcm-eu
   remote_user: root
   roles:
-    - get-hostname
+    - get-hostname-role
     - ansible-role-openvpn
 
 - hosts: ogn
-  user: pi
+  user: root
   become: yes
   roles:
-    - copy-client-certs
+    - copy-client-certs-role
