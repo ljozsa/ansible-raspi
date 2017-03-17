@@ -1,8 +1,7 @@
 ---
-- src: dochang.pip
-
-- src: https://github.com/ljozsa/raspicam-role.git
-  name: raspicam
-
-- src: https://github.com/ljozsa/openshift-ftp-upload-role.git
-  name: openshift-ftp-upload
+- src: https://github.com/ljozsa/ansible-role-enable-root-pubkey-login.git
+- src: https://github.com/ljozsa/ansible-role-mobile-net-setup.git
+- src: https://github.com/ljozsa/ansible-role-ogn-node.git
+- src: https://github.com/ljozsa/ansible-role-get-hostname.git
+- src: https://github.com/kyl191/ansible-role-openvpn.git
+- src: https://github.com/ljozsa/ansible-role-copy-client-certs.git

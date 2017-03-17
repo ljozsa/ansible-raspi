@@ -3,18 +3,18 @@
   user: root
   become: yes
   roles:
-    - enable-root-pubkey-login-role
-    - mobile-net-setup-role
-    - ogn-node
+    - ansible-role-enable-root-pubkey-login
+    - ansible-role-mobile-net-setup
+    - ansible-role-ogn-node
 
 - hosts: lkcm-eu
   remote_user: root
   roles:
-    - get-hostname-role
+    - ansible-role-get-hostname
     - ansible-role-openvpn
 
 - hosts: ogn
   user: root
   become: yes
   roles:
-    - copy-client-certs-role
+    - ansible-role-copy-client-certs
