@@ -4,10 +4,10 @@
   become: yes
   roles:
     - ansible-role-enable-root-pubkey-login
-    - ansible-role-mobile-net-setup
     - ansible-role-ogn-node
+#    - ansible-role-mobile-net-setup
 
-- hosts: lkcm-eu
+- hosts: servers
   remote_user: root
   roles:
     - ansible-role-get-hostname
